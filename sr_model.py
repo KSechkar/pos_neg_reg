@@ -191,7 +191,7 @@ def induction_to_F(
     x0s = jnp.concatenate((ind_mesh,x0_variables*jnp.ones((ind_mesh.shape[0],6))),axis=1)
 
     # simulation time axis parameters
-    tf = (0, 48)  # simulation time frame
+    tf = (0, 24)  # simulation time frame
 
     # define arguments of the ODE term
     args = (
